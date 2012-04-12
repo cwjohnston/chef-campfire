@@ -24,6 +24,7 @@ Attributes
 * `paste` - toggles whether or not to send the message as a monospaced "paste", (defaults to false)
 * `play_before` - play the specified sound before speaking the message
 * `play_after` - play the specified sound after speaking the message
+* `failure_ok` - toggles whether or not to catch the exception if an error is encountered connecting to Campfire
 
 A list of emoji and sounds available in Campfire can be found here: http://www.emoji-cheat-sheet.com/ 
 

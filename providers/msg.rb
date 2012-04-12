@@ -22,10 +22,10 @@ action :speak do
       if @new_resource.failure_ok
         Chef::Log.info("Campfire: failed to connect to campfire.")
         Chef::Log.debug("Campfire: #{e.inspect}")
-        raise
       else
         Chef::Log.fatal("Campfire: failed to connect to campfire.")
         Chef::Log.fatal("Campfire: #{e.inspect}")
+        raise
       end
   end
 end
