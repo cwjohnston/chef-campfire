@@ -19,7 +19,6 @@ Attributes
 * `subdomain` - the subdomain for your Campfire instance (required)
 * `room` - the name of the room you would like to speak into (requied)
 * `token` - authentication token for your Campfire account (required)
-* `ssl` - toggles whether or not SSL is used in the connection (defaults to false)
 * `message` - the message to speak. If a message is not specified, the name of the `campfire_msg` resource is used.
 * `paste` - toggles whether or not to send the message as a monospaced "paste", (defaults to false)
 * `play_before` - play the specified sound before speaking the message

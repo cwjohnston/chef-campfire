@@ -1,7 +1,7 @@
 action :speak do
   require 'tinder'
   begin
-    campfire = Tinder::Campfire.new(@new_resource.subdomain, :token => @new_resource.token, :ssl => @new_resource.ssl)
+    campfire = Tinder::Campfire.new(@new_resource.subdomain, :token => @new_resource.token, :ssl => true)
     room = campfire.find_room_by_name(@new_resource.room)
 
     if @new_resource.play_before
