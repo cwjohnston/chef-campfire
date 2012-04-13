@@ -20,10 +20,10 @@ Attributes
 * `room` - the name of the room you would like to speak into (requied)
 * `token` - authentication token for your Campfire account (required)
 * `message` - the message to speak. If a message is not specified, the name of the `campfire_msg` resource is used.
-* `paste` - toggles whether or not to send the message as a monospaced "paste", (defaults to false)
+* `paste` - toggles whether or not to send the message as a monospaced "paste" (defaults to false)
 * `play_before` - play the specified sound before speaking the message
 * `play_after` - play the specified sound after speaking the message
-* `failure_ok` - toggles whether or not to catch the exception if an error is encountered connecting to Campfire
+* `failure_ok` - toggles whether or not to catch the exception if an error is encountered connecting to Campfire (defaults to true)
 
 A list of emoji and sounds available in Campfire can be found here: http://www.emoji-cheat-sheet.com/ 
 
