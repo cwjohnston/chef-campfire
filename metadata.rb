@@ -1,5 +1,5 @@
 name "campfire"
 maintainer "Cameron Johnston"
-maintainer_email "cwjohnston@gmail.com"
+maintainer_email "cameron@rootdown.net"
 description "LWRP for sending messages to Campfire rooms"
 version "0.0.3"

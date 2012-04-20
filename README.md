@@ -44,7 +44,7 @@ Usage examples
 License and Author
 ==================
 
-Author:: Cameron Johnston <cwjohnston@gmail.com>
+Author:: Cameron Johnston <cameron@rootdown.net>
 
 Copyright:: 2012, Cameron Johnston
 
