@@ -36,7 +36,6 @@ Usage examples
             subdomain 'example'
             room 'Important Stuff'
             token '0xdedbeef0xdedbeef0xdedbeef'
-            ssl true
             message "I have some bad news... there was an error: #{some_error}"
             play_after 'trombone'
         end
