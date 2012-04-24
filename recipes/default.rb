@@ -1,7 +1,5 @@
-tinder = gem_package 'tinder' do
-    action :install
-    version '1.4.4'
+broach = gem_package 'broach' do
     action :nothing
 end
 
-tinder.run_action(:install)
+broach.run_action(:install)

@@ -1,11 +1,11 @@
 action :speak do
-  require 'tinder'
+  require 'broach'
   begin
-    campfire = Tinder::Campfire.new(@new_resource.subdomain, :token => @new_resource.token, :ssl => true)
-    room = campfire.find_room_by_name(@new_resource.room)
+    Broach.settings = {'account' => @new_resource.subdomain, 'token' => @new_resource.token, 'use_ssl' => true}
+    room = Broach::Room.find_by_name(@new_resource.room)
 
     if @new_resource.play_before
-      room.play(@new_resource.play_before)
+      room.sound(@new_resource.play_before)
     end
 
     if @new_resource.paste
@@ -15,7 +15,7 @@ action :speak do
     end
 
     if @new_resource.play_after
-      room.play(@new_resource.play_after)
+      room.sound(@new_resource.play_after)
     end
 
   rescue => e

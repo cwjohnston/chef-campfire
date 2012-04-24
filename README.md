@@ -12,7 +12,7 @@ Requirements
 ============
 
 * Authentication token for an existing 37signals Campfire account.
-* 'tinder' gem (automatically installed by this cookbook's default recipe)
+* 'broach' gem (automatically installed by this cookbook's default recipe)
 
 Attributes
 ==========
@@ -40,6 +40,11 @@ Usage examples
             message "I have some bad news... there was an error: #{some_error}"
             play_after 'trombone'
         end
+
+Change log
+==========
+* 0.0.4 - Rewrite to use Broach gem in lieu of Tinder, as Tinder's dependency on ActiveSupport has negative consequences for Chef.
+* 0.0.3 - First public release
 
 License and Author
 ==================
